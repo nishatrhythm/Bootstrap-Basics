@@ -1,0 +1,132 @@
+.input-container {
+  position: relative;
+}
+
+input {
+  height: 48px;
+  width: 280px;
+  border: 1px solid #c0c0c0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 16px;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+input, .label .text {
+  font-family: 'Segoe UI';
+  font-size: 16px;
+}
+
+.label .text {
+  transition: all 0.15s ease-out;
+  color: grey;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid blue;
+}
+
+input:focus + .label .text, :not(input[value=""]) + .label .text {
+  font-size: 12px;
+  transform: translate(0, -110%);
+  background-color: white;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+input:focus + .label .text {
+  color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Center the form vertically and horizontally */
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Give some space around the form */
+.login-form form {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Style the input fields */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;                                                                                                                                                                            
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Style the login button */
+.login-form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  text-align: center; /* Add this line */
+}
+
+/* Style the link to the forgot password page */
+.login-form a {
+  color: #008CBA;
+}
+
+/* Style the form heading */
+.login-form h2 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Style the error message */
+.login-form .error {
+  color: red;
+  margin-top: 10px;
+}
